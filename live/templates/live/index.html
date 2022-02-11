@@ -1,0 +1,34 @@
+{% extends 'live/base.html' %}
+
+
+
+
+{% block main %}
+
+	<div class="container-fluid bg-gradient p-5">
+		<div class="m-auto text-center row">
+			<div class="col-4 g-0 p-0 m-0 d-none">
+				<h1> server video</h1>
+				<video  class="border border-3 mt-5 w-75 shadow  rounded rounded-3" id="server" autoplay ></video>
+			</div>
+			<div class="col-6 g-0 p-0 m-0">
+				<h1> server canvas </h1>
+				<canvas  class="border border-3 mt-5 w-75 shadow  rounded rounded-3" id="canvas"></canvas>
+			</div>
+
+			<div class="col-6 g-0 p-0 m-0">
+				<h1> client </h1>
+				<canvas  class="border border-3 mt-5 w-75 shadow  rounded rounded-3" id="client"></canvas>
+			</div>
+			
+			<div class="col-12 row ">
+					<button class="btn btn-primary mt-1	 bg-gradient" id="start"> شروع </button>
+					<button class="btn btn-danger mt-1	 bg-gradient" id="end" > پایان </button>
+			</div>
+
+		</div>
+	</div>
+
+
+
+{% endblock main %}
